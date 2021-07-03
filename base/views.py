@@ -31,6 +31,7 @@ def get_context():
     
     # check_changes()
     # scrape()
+    # Project.objects.all().delete()
     checkgit()
     context = {
         'projects': Project.objects.filter(is_proper = True)

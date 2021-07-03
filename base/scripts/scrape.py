@@ -58,9 +58,9 @@ def checkgit():
         try:
             Project.objects.get(title = endpoint[1:])
             update_project(url, datetime)
-            print('try', url)
+            # print('try', url)
         except:
             add_project(url, datetime)
-            print('except', url)
+            # print('except', url)
 
 # checkgit()
